@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="shortcut icon" href="/assets/img/autoclima_logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/animaciones.css" />
+    <title>Autoclima Pilar</title>
+  </head>
+  <body>
+    <header>
+
+       <a href="./index.html">  
+         <img
+        src="./assets/img/autoclima_logo.png"
+        alt="logo de autoclima"
+        class="logo"
+      />
+</a> 
+     
+      <nav class="navbar">
+        <label for="menu_toggle" class="menu_label">
+          <img src="./assets/img/menu.png" alt="menu_icon" />
+        </label>
+        <input type="checkbox" id="menu_toggle" />
+
+        <ul class="navbar_list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#info ">Descubre</a></li>
+          <li>
+            <a
+              href="https://autoclima-pilar.negocio.site/"
+              target="_blank"
+              >Conocenos</a
+            >
+          </li>
+        </ul>
+        <label for="cart_toggle" class="cart_label">
+          <i class="fa-solid fa-cart-shopping cart_icon"></i>
+        </label>
+        <input type="checkbox" id="cart_toggle" />
+
+        <!-- Cart -->
+
+        <div class="cart">
+          <h2>Tus Baterias</h2>
+          <div class="cart_item">
+            <img src="./assets/img/bateria1.png" alt="Bateria moura" />
+            <div class="cart_item_info">
+              <h3 class="cart_item_title">Moura</h3>
+              <span class="cart_item_price">$24.000</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down">-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart_item">
+            <img
+              src="./assets/img/bateria2.png.crdownload"
+              alt="Bateria Willard"
+            />
+            <div class="cart_item_info">
+              <h3 class="cart_item_title">Willard</h3>
+              <span class="cart_item_price">$28.000</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down">-</span>
+              <span class="item_quantity">2</span>
+              <span class="quantity_handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart_item">
+            <img src="./assets/img/bateria3.png" alt="Bateria prestolite" />
+            <div class="cart_item_info">
+              <h3 class="cart_item_title">Prestolite</h3>
+              <span class="cart_item_price">$20.000</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down">-</span>
+              <span class="item_quantity">1</span>
+              <span class="quantity_handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart_item">
+            <img src="./assets/img/bateria4.png" alt="Bateria varta" />
+            <div class="cart_item_info">
+              <h3 class="cart_item_title">Varta</h3>
+              <span class="cart_item_price">$32.000</span>
+            </div>
+            <div class="item_handler">
+              <span class="quantity_handler down">-</span>
+              <span class="item_quantity">3</span>
+              <span class="quantity_handler up">+</span>
+            </div>
+          </div>
+
+          <span class="divisor"></span>
+          <div class="cart_total">
+            <p>Total</p>
+            <span>$196.000</span>
+          </div>
+          <button class="btn_add">Comprar</button>
+        </div>
+        <div class="overlay"></div>
+
+        <!-- Fin del carrito -->
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <!-- hero -->
+
+      <section id="hero">
+        <div class="hero_info">
+          <h1>Las mejores baterías para tu vehículo.</h1>
+          <p>
+            Autoclima Pilar es un local de venta de baterias para automoviles,
+            la mejor en Pilar. Hacemos la colocacion en el instante y
+            verificamos que ande correctamente.
+          </p>
+          <div class="content_text_btns"> 
+          <a href="./pages/login.html" class="btn btn_login"> <span>Iniciar Sesión</span></a>
+          <a href="./pages/register.html" class="btn btn_register" ><span>Registrame</span></a>
+        </div>
+        </div>
+        <div class="hero_card">
+          <img src="./assets/img/bateria1.png" alt="bateria1" />
+          <div class="hero_card_info">
+            <div class="hero_card_top">
+              <h3>Marca Lider</h3>
+            </div>
+            <div class="hero_card_price">
+              <p>Precio</p>
+              <span>$24.000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Info Card -->
+
+      <section id="info">
+        <h2>Nuestros beneficios</h2>
+        <div class="info_cards_container">
+          <div class="info_card">
+            <img src="./assets/img/mejor calidad.png" alt="mejor calidad" />
+            <h3>La mejor calidad</h3>
+            <p>
+              En Autoclima Pilar tenemos las mejores baterias, mas duraderas.
+            </p>
+          </div>
+
+          <div class="info_card">
+            <img
+              src="./assets/img/atencion cliente.png"
+              alt="atencion al cliente"
+            />
+            <h3>Atencion al cliente</h3>
+            <p>Hacemos la colocacion y controlamos la carga en el momento.</p>
+          </div>
+
+          <div class="info_card">
+            <img src="./assets/img/metodo de pago.png" alt="metodo de pago" />
+            <h3>Metodos de pago</h3>
+            <p>
+              Si elegis pagar con tarjeta, tenemos la opcion de 12 pagos sin
+              interes. Si pagas en efectivo se te hara un descuento de 15%.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+
+      <section id="products">
+        <h2 class="products_h2">Baterías</h2>
+        <div class="products_containers">
+          <!-- Producto 1 -->
+          <div class="product">
+            <img src="./assets/img/bateria1.png" alt="bateria 1" />
+            <div class="product_info">
+              <!-- top -->
+              <div class="product_top">
+                <h3>Moura</h3>
+                <p>M26AD</p>
+              </div>
+              <!-- mid -->
+              <div class="product_mid">
+                <div class="product_price">
+                  <p>Precio</p>
+                </div>
+                <span>$28.000</span>
+              </div>
+              <!-- bot -->
+              <div class="product_bot">
+                
+                    <button class="btn_add">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            
+          
+
+          <!-- Producto 2 -->
+          <div class="product">
+            <img src="./assets/img/bateria2.png.crdownload" alt="bateria" />
+            <div class="product_info">
+              <!-- top -->
+              <div class="product_top">
+                <h3>Willard</h3>
+                <p>Ub 740</p>
+              </div>
+              <!-- mid -->
+              <div class="product_mid">
+                <div class="product_price">
+                  <p>Precio</p>
+                </div>
+                <span>$32.400</span>
+              </div>
+              <!-- bot -->
+              <div class="product_bot">
+               
+                    <button class="btn_add">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            
+
+          <!-- Producto 3 -->
+          <div class="product">
+            <img src="./assets/img/bateria3.png" alt="Bateria 3" />
+            <div class="product_info">
+              <!-- top -->
+              <div class="product_top">
+                <h3>Prestolite</h3>
+                <p>PA45BD</p>
+              </div>
+              <!-- mid -->
+              <div class="product_mid">
+                <div class="product_price">
+                  <p>Precio</p>
+                </div>
+                <span>$22.000</span>
+              </div>
+              <!-- bot -->
+              <div class="product_bot">
+                
+                    <button class="btn_add">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            
+
+          <!-- Producto 4 -->
+          <div class="product">
+            <img src="./assets/img/bateria4.png" alt="Bateria 4" />
+            <div class="product_info">
+              <!-- top -->
+              <div class="product_top">
+                <h3>Varta</h3>
+                <p>VTA55DD</p>
+              </div>
+              <!-- mid -->
+              <div class="product_mid">
+                <div class="product_price">
+                  <p>Precio</p>
+                </div>
+                <span>$25.000</span>
+              </div>
+              <!-- bot -->
+              <div class="product_bot">
+             
+                    <button class="btn_add">Comprar</button>
+                  </div>
+                </div>
+              </div>
+          
+          <!-- Producto 5 -->
+          <div class="product">
+            <img src="./assets/img/Bateria5.png" alt="Bateria 5" />
+            <div class="product_info">
+              <!-- top -->
+              <div class="product_top">
+                <h3>Ac delco</h3>
+                <p>FD44RG</p>
+              </div>
+              <!-- mid -->
+              <div class="product_mid">
+                <div class="product_price">
+                  <p>Precio</p>
+                </div>
+                <span>$19.000</span>
+              </div>
+              <!-- bot -->
+              <div class="product_bot">
+               
+                    <button class="btn_add">Comprar</button>
+                  </div>
+                </div>
+              </div>
+           
+
+          <!-- Producto 6 -->
+          <div class="product">
+            <img src="./assets/img/bateria6.png" alt="Bateria 6 " />
+            <div class="product_info">
+              <!-- top -->
+              <div class="product_top">
+                <h3>Bosch</h3>
+                <p>GH345TT</p>
+              </div>
+              <!-- mid -->
+              <div class="product_mid">
+                <div class="product_price">
+                  <p>Precio</p>
+                </div>
+                <span>$16.000</span>
+              </div>
+              <!-- bot -->
+              <div class="product_bot">
+                
+                    <button class="btn_add">Comprar</button>
+                  </div>
+                </div>
+              </div>
+         
+          
+        </div>
+      
+      </section>
+    </main>
+    <footer>
+      <div class="footer_nav">
+        
+
+        <li class="footer_title">Acerca de:
+
+        <ul class="footer_li"> 
+          <li> <a href="#hero">Quienes somos</a> </li>
+          <li> <a href="#info">Medios de pago</a> </li>
+          <li> <a href="#">Contacto</a> </li>
+        </ul>
+        </li>
+      
+        <li class="footer_title"> Baterias:
+        <ul class="footer_li">
+          <li><a href="#products">Moura</a>  </li>
+          <li><a href="#products">Willard</a>  </li>
+          <li> <a href="#products">Prestolite</a> </li>
+          <li><a href="#products"> Bosch</a> </li>
+          <li><a href="#products">Ac delco</a>  </li>
+          <li><a href="#products">Varta</a>  </li>
+        </ul>
+    </li>
+    <li class="footer_title">Donde nos encontramos:
+        <ul class="footer_li">
+          <li>
+ 
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.9061262206346!2d-58.896271484240486!3d-34.45453075712775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cd4bcdeb293%3A0x763b2c5e8cc1c070!2sAutoclima%20Pilar!5e0!3m2!1ses!2sar!4v1668466082139!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+       </li>
+</ul>
+</li>
+
+
+</div>
+
+
+      
+        <div>
+          <ul class="footer_links">
+            <li><a href="#">Términos de uso</a></li>
+            <li><a href="#">Trabajá con nosotros</a></li>
+            <li><a href="#">Soporte</a></li>
+          </ul>
+        </div>
+        
+      </footer>
+    </body>
+  </html>
+  
+  </body>
+</html>
